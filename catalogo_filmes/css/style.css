@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #c3d0da;
+    color: #2b3640;
+}
+
+header h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem, 1rem;
+    color: #1f2b36;
+}
+
+#catalogo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+@media (max-width: 700px){
+    #catalogo{
+        grid-template-columns: 1fr;
+    }
+}
+
+.ficha{
+    position: relative;
+    background: #fff;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ficha-topo {
+  display: flex;
+  gap: 0.75rem;
+}
+ 
+.capa {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  background: #dfe5ec;
+  flex-shrink: 0;
+}
+ 
+.info {
+  flex: 1;
+  min-width: 0;
+  padding-right: 3.2rem; 
+}
+ 
+.titulo {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+ 
+.generos {
+  margin: 0;
+  font-size: 0.75rem;
+}
+ 
+.elenco {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+}
+ 
+.resumo {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+ 
+.ficha h3 {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+ 
+
+.faixa-etaria {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 3rem;
+  padding: 0.35rem 0.6rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2b36;
+}
+ 
+.faixa-etaria.verde    { background: #8fd9cf; }
+.faixa-etaria.amarelo  { background: #fbe08a; }
+.faixa-etaria.vermelho { background: #ee9fa8; }
+ 
+
+.estrelas {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0.2rem 0;
+}
+ 
+.estrela-cheia { color: #f5b301; }
+.estrela-vazia { color: #d3d8de; }
+ 
+.similares {
+  display: flex;
+  gap: 0.4rem;
+}
+ 
+.similares img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background: #dfe5ec;
+}
